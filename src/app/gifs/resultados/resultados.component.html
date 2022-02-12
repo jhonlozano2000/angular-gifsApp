@@ -1,2 +1,13 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem placeat laboriosam nesciunt qui,
-eligendi alias. Dicta, totam autem! Doloribus sequi enim omnis tempora illo, non odit id vitae obcaecati?
+<div class="row">
+    <div *ngFor="let item of resultados"
+    class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
+        <div class="car">
+            <img [src]="item.images.downsized_medium.url" [alt]="item.title" class="card-img-top">
+            <div class="car-body">
+                <p class="car-text">
+                {{ item.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
